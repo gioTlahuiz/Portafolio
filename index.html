@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Giovanni Tlahuiz</title>
+
+  <!-- Animaciones -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0b1120;
+      color: #e5e7eb;
+    }
+
+    /* Fondo tipo código */
+    body::before {
+      content: "";
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: url('https://images.unsplash.com/photo-1518770660439-4636190af475') center/cover;
+      opacity: 0.08;
+      z-index: -1;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background: rgba(15, 23, 42, 0.8);
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(10px);
+    }
+
+    nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    .btn {
+      border: 1px solid #3b82f6;
+      padding: 8px 15px;
+      border-radius: 6px;
+    }
+
+    /* Hero */
+    header {
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #9ca3af;
+      font-size: 18px;
+    }
+
+    .github-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      border-radius: 25px;
+      border: 1px solid #3b82f6;
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Sections */
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    /* Cards */
+    .projects {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      padding: 25px;
+      width: 300px;
+      border-radius: 12px;
+      transition: 0.3s;
+      backdrop-filter: blur(10px);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      border-color: #3b82f6;
+    }
+
+    /* Contact */
+    .contact {
+      background: rgba(30, 41, 59, 0.6);
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div><strong>Giovanni Tlahuiz</strong></div>
+  <div>
+    <a href="#">Inicio</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+    <a class="btn" href="#">GitHub ↗</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header data-aos="fade-down">
+  <h1>Giovanni Saúl Tlahuiz Tenorio</h1>
+  <p class="subtitle">Desarrollador de Software</p>
+  <a class="github-btn" href="#">GitHub: gioTlahuiz</a>
+</header>
+
+<!-- PROYECTOS -->
+<section id="proyectos">
+  <h2 data-aos="fade-up">Proyectos</h2>
+
+  <div class="projects">
+    <div class="card" data-aos="fade-right">
+      <h3>API REST</h3>
+      <p>Spring Boot + Java</p>
+    </div>
+
+    <div class="card" data-aos="fade-left">
+      <h3>App Web</h3>
+      <p>HTML, CSS, JavaScript</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <h2 data-aos="fade-up">Contacto</h2>
+
+  <div class="contact" data-aos="zoom-in">
+    <p>📧 giovannitlahuiz@gmail.com</p>
+    <p>💼 linkedin.com/in/gioTlahuiz</p>
+    <p>💻 github.com/gioTlahuiz</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Giovanni Saúl Tlahuiz Tenorio
+</footer>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000
+  });
+</script>
+
+</body>
+</html>
