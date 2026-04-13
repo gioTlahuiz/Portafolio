@@ -1,191 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Giovanni Tlahuiz</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Giovanni Tlahuiz</title>
+    <link href="style.css" rel="stylesheet" />
 
-  <!-- Animaciones -->
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #0b1120;
-      color: #e5e7eb;
-    }
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div><strong>Giovanni Tlahuiz</strong></div>
+      <div>
+        <a href="#">Inicio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn" href="https://github.com/gioTlahuiz" target="_blank"
+          >GitHub ↗</a
+        >
+      </div>
+    </nav>
 
-    /* Fondo tipo código */
-    body::before {
-      content: "";
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background: url('https://images.unsplash.com/photo-1518770660439-4636190af475') center/cover;
-      opacity: 0.08;
-      z-index: -1;
-    }
+    <!-- HERO -->
+    <header data-aos="fade-down">
+      <h1>Giovanni Saúl Tlahuiz Tenorio</h1>
+      <p class="subtitle">Desarrollador de Software</p>
+    </header>
 
-    /* Navbar */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px 50px;
-      background: rgba(15, 23, 42, 0.8);
-      position: sticky;
-      top: 0;
-      backdrop-filter: blur(10px);
-    }
+    <section class="about-section">
+      <div class="about-container">
+        <!-- FOTO -->
+        <div class="about-image">
+          <img src="profile2.png" alt="Giovanni Tlahuiz" />
+        </div>
 
-    nav a {
-      color: #e5e7eb;
-      text-decoration: none;
-      margin: 0 15px;
-    }
+        <!-- TEXTO -->
+        <div class="about-text">
+          <h2>👨‍💻 Sobre mí</h2>
+          <p>
+            Matemático con experiencia en análisis de datos y desarrollo Full
+            Stack. Con conocimientos en Java, Spring Boot, APIs REST, SQL y
+            tecnologías web, enfocado en el desarrollo de aplicaciones,
+            automatización de procesos y análisis de información. Destaco por mi
+            pensamiento analítico y resolución de problemas complejos.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    .btn {
-      border: 1px solid #3b82f6;
-      padding: 8px 15px;
-      border-radius: 6px;
-    }
+    <section class="cv-section">
+      <div class="cv-container">
+        <div class="cv-text">
+          <h2 class="cv-title">
+            <i class="fa-solid fa-file-lines"></i> Curriculum
+          </h2>
+          <div class="experience">
+            <h3>Experiencia / Proyectos relevantes</h3>
 
-    /* Hero */
-    header {
-      text-align: center;
-      padding: 120px 20px;
-    }
+            <div class="project">
+              <h4>📊 Dashboard para análisis estadístico de proyectos</h4>
+              <ul>
+                <li>
+                  Desarrollo de un dashboard interactivo para el análisis de
+                  proyectos de inversión.
+                </li>
+                <li>
+                  Integración de datos mediante APIs y automatización de
+                  actualizaciones.
+                </li>
+                <li>
+                  Aplicación de técnicas de análisis de datos y visualización
+                  para apoyar la toma de decisiones.
+                </li>
+              </ul>
+            </div>
 
-    h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
+            <div class="project">
+              <h4>📈 Análisis de datos y modelación estadística</h4>
+              <ul>
+                <li>
+                  Aplicación de modelos estadísticos para el análisis de
+                  información financiera.
+                </li>
+                <li>
+                  Evaluación de indicadores clave como la Tasa Interna de
+                  Retorno (TIR).
+                </li>
+                <li>
+                  Desarrollo de herramientas computacionales para el
+                  procesamiento y análisis de datos.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    .subtitle {
-      color: #9ca3af;
-      font-size: 18px;
-    }
+    <!-- seccion de blog -->
+    <section id="blog" class="blog-section">
+      <h2 class="section-title"><i class="fa-solid fa-pen-nib"></i> Blog</h2>
 
-    .github-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      border-radius: 25px;
-      border: 1px solid #3b82f6;
-      color: white;
-      text-decoration: none;
-    }
+      <div class="blog-container">
+        <!-- Post 1 -->
+        <div class="blog-card">
+          <h3>Cómo crear una API REST con Spring Boot</h3>
+          <p>
+            Guía básica para construir una API REST utilizando Java y Spring
+            Boot, incluyendo endpoints, controladores y buenas prácticas.
+          </p>
+          <a href="#">Leer más →</a>
+        </div>
 
-    /* Sections */
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 60px 20px;
-    }
+        <!-- Post 2 -->
+        <div class="blog-card">
+          <h3>Introducción al análisis de datos con Java</h3>
+          <p>
+            Uso de herramientas y librerías para procesar y analizar datos desde
+            un enfoque backend.
+          </p>
+          <a href="#">Leer más →</a>
+        </div>
 
-    h2 {
-      text-align: center;
-      margin-bottom: 40px;
-    }
+        <!-- Post 3 -->
+        <div class="blog-card">
+          <h3>Buenas prácticas en desarrollo Full Stack</h3>
+          <p>
+            Principios clave para escribir código limpio, escalable y mantenible
+            en aplicaciones web.
+          </p>
+          <a href="#">Leer más →</a>
+        </div>
+      </div>
+    </section>
 
-    /* Cards */
-    .projects {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+    <!-- PROYECTOS -->
+    <section id="proyectos">
+      <h2 data-aos="fade-up">Proyectos</h2>
 
-    .card {
-      background: rgba(30, 41, 59, 0.6);
-      border: 1px solid rgba(59, 130, 246, 0.2);
-      padding: 25px;
-      width: 300px;
-      border-radius: 12px;
-      transition: 0.3s;
-      backdrop-filter: blur(10px);
-    }
+      <div class="projects">
+        <div class="card" data-aos="fade-right">
+          <h3>E-commerce</h3>
+          <p>Spring Boot + Java + HTML + CSS + JavaScript</p>
+        </div>
+      </div>
+    </section>
 
-    .card:hover {
-      transform: translateY(-10px);
-      border-color: #3b82f6;
-    }
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <h2 data-aos="fade-up">Contacto</h2>
 
-    /* Contact */
-    .contact {
-      background: rgba(30, 41, 59, 0.6);
-      padding: 30px;
-      border-radius: 12px;
-      text-align: center;
-    }
+      <div class="contact" data-aos="zoom-in">
+        <p>
+          <a href="mailto:fcei.tlahuiz.2.e@gmail.com" class="btn-correo"
+            >📧 fcei.tlahuiz.2.e@gmail.com</a
+          >
+        </p>
+        <p>
+          <a
+            href="https://www.linkedin.com/in/giovanni-tlahuiz"
+            target="_blank"
+            class="btn-linkedin"
+          >
+            💼 Ver mi LinkedIn
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/gioTlahuiz"
+            target="_blank"
+            class="btn-github"
+            >💻 Github:gioTlahuiz</a
+          >
+        </p>
+      </div>
+    </section>
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #6b7280;
-    }
-  </style>
-</head>
+    <footer>© 2026 Giovanni Saúl Tlahuiz Tenorio</footer>
 
-<body>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-<!-- NAVBAR -->
-<nav>
-  <div><strong>Giovanni Tlahuiz</strong></div>
-  <div>
-    <a href="#">Inicio</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#contacto">Contacto</a>
-    <a class="btn" href="#">GitHub ↗</a>
-  </div>
-</nav>
-
-<!-- HERO -->
-<header data-aos="fade-down">
-  <h1>Giovanni Saúl Tlahuiz Tenorio</h1>
-  <p class="subtitle">Desarrollador de Software</p>
-  <a class="github-btn" href="#">GitHub: gioTlahuiz</a>
-</header>
-
-<!-- PROYECTOS -->
-<section id="proyectos">
-  <h2 data-aos="fade-up">Proyectos</h2>
-
-  <div class="projects">
-    <div class="card" data-aos="fade-right">
-      <h3>API REST</h3>
-      <p>Spring Boot + Java</p>
-    </div>
-
-    <div class="card" data-aos="fade-left">
-      <h3>App Web</h3>
-      <p>HTML, CSS, JavaScript</p>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACTO -->
-<section id="contacto">
-  <h2 data-aos="fade-up">Contacto</h2>
-
-  <div class="contact" data-aos="zoom-in">
-    <p>📧 giovannitlahuiz@gmail.com</p>
-    <p>💼 linkedin.com/in/gioTlahuiz</p>
-    <p>💻 github.com/gioTlahuiz</p>
-  </div>
-</section>
-
-<footer>
-  © 2026 Giovanni Saúl Tlahuiz Tenorio
-</footer>
-
-<!-- Scripts -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<script>
-  AOS.init({
-    duration: 1000
-  });
-</script>
-
-</body>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
+  </body>
 </html>
