@@ -179,11 +179,14 @@ section {
 }
 
 .project {
+  display: flex;
   background: rgba(30, 41, 59, 0.6);
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 12px;
   border: 1px solid rgba(59, 130, 246, 0.2);
+  flex-wrap: wrap;
+  
 }
 
 .project h4 {
@@ -211,6 +214,8 @@ section {
 
 .card:hover .project-img {
   transform: scale(1.05);
+  transform: translateY(-10px);
+  width: 300px;
 }
 
 .blog-section {
@@ -268,7 +273,8 @@ h2 {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content:center;
+  
 }
 
 .card {
